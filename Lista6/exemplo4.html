@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<script src="funcoes.js"></script>
+<script>
+    var tam, a=[], b=[], soma=[], somaGeralA=0, somaGeralB=0, qtParA=0, qtImparA=0;
+
+    tam = Number(prompt('Informe o tamanho dos vetores: '));
+
+    alert('Preenchendo vetor A');
+    a = preencherVetor(tam, 'A');
+
+    alert('Preenchendo vetor B');
+    b = preencherVetor(tam);
+
+    soma = somarDoisVetores(tam, a, b);
+    somaGeralA = somarVetor(tam, a);
+    somaGeralB = somarVetor(tam, b);
+    qtParA = contarPares(tam, a);
+    qtImparA = contarImpares(tam, a);
+
+    document.write('Conteúdo do Vetor A <br>');
+    exibirVetor(tam, a);
+
+    document.write('<br> Conteúdo do Vetor B <br>');
+    exibirVetor(tam, b);
+
+    document.write('<br> Conteúdo do Vetor Soma <br>');
+    exibirVetor(tam, soma);
+
+    document.write('<br> Soma geral do vetor A: ', somaGeralA, '<br>');
+    document.write('<br> Soma geral do vetor B: ', somaGeralB, '<br>');
+    document.write('<br> Qauntidade de pares de A: ', qtParA, '<br>');
+    document.write('<br> Qauntidade de impares de A: ', qtImparA, '<br>');
+
+    
+</script>

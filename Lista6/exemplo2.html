@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<script>
+    var vet = [];
+
+    alert('Preenchendo o vetor');
+
+    for (i = 0; i < 5; i++) {
+        vet[i] = Number(prompt('Informe o ' + (i + 1) + 'o número do vetor'));
+    }
+
+    document.write('Exibindo o vetor <br>');
+
+    for (i = 0; i < 5; i++) {
+        document.write('vetor[', (i + 1), ']= ', vet[i], '<br>');
+    }
+
+</script>
